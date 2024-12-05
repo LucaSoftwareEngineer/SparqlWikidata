@@ -1,0 +1,5 @@
+SELECT ?piva ?nomeAzienda WHERE {
+  ?azienda wdt:P3608 ?piva.
+  ?azienda wdt:P2561 ?nomeAzienda.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],mul,en". }
+}
