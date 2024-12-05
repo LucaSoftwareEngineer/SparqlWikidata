@@ -1,0 +1,7 @@
+SELECT ?nomeLabel ?cognomeLabel ?universitàLabel WHERE {
+  ?persona wdt:P2561 ?nome.
+  ?persona wdt:P734 ?cognome.
+  ?persona wdt:P108 ?università.
+  ?persona wdt:P108 wd:Q34433
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],mul,en". }
+}
